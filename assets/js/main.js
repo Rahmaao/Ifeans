@@ -1,9 +1,4 @@
-/**
-* Template Name: Eterna - v4.8.1
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
     "use strict";
   
@@ -200,3 +195,12 @@
     new PureCounter();
   
   })()
+
+function submitContact() {
+    // const name = document.querySelector("#name").value;
+    const subject = document.querySelector("#subject").value;
+    const message = document.querySelector("#message").value;
+    window.open(
+      `mailto:ifeanselectrical@gmail.com?subject=${subject}&body=${message}`
+    );
+}
