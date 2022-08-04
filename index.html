@@ -210,6 +210,7 @@
             </div>
   
             <div class="col-lg-6">
+              <!-- There was a class here I removed because it was messing up the form. php-form or something like that -->
               <form onsubmit="submitContact()" id="jsContactForm">
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -222,13 +223,7 @@
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" id="message" rows="5" placeholder="message" required></textarea>
                 </div>
-                <!-- I don't think it's necessary becaues the message isn't sent on thepage but on another tab -->
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit" class="btn btn-secondary btn-sm btn1">Send Message</button></div>
               </form>
             </div>
   
