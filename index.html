@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>IFEANS ELECTRICAL ENGINEERING ENTERPRISE</title>
+  <title>Ifeans Electrical Engineering Enterprise</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo2.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -53,10 +53,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="#topbar">Home</a></li>
+          <li><a href="#services">About</a></li>
+          <li><a href="#featured">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -128,7 +128,7 @@
         <div class="container">
           <div class="section-title">
               <h2>Services</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <p>Ifeans has qualified engineers and professionals that create value for our clients by offering an array of services ranging below.</p>
             </div>
   
           <div class="row">
@@ -136,21 +136,21 @@
               <div class="icon-box">
                 <i class="fa-solid fa-store"></i>                
                 <h3><a href="">Dealing</a></h3>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <p>We are engaged in the wholesale and retailing of electrical supplies to commercial, residential, and industrial construction industries.</p>
               </div>
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
               <div class="icon-box">
                 <i class="fa-solid fa-truck"></i>
                 <h3><a href="">Supplying</a></h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <p>We supply, deliver and distribute electrical supplies for commercial, residential, and industrial construction purposes</p>
               </div>
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
               <div class="icon-box">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 <h3><a href="">Installation</a></h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <p>As experts in the field, we specialize in the installation, fixing and maintainance of your electrical and electronic systems.</p>
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Us</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Feel free to reach out to us through any of the provided means if you have any inquiries or concerns about our services.</p>
               </div>
   
           <div class="row">
@@ -210,7 +210,7 @@
             </div>
   
             <div class="col-lg-6">
-              <form action="javascript:submitContact();" method="post" role="form" class="php-email-form">
+              <form onsubmit="submitContact()" id="jsContactForm">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -220,8 +220,9 @@
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="message" required></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="message" required></textarea>
                 </div>
+                <!-- I don't think it's necessary becaues the message isn't sent on thepage but on another tab -->
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
@@ -246,40 +247,37 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#topbar">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#featured">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dealers in Electrical & Electronic Materials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Supply of Electrical & Electronic Materials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Installation of Electrical & Electronic Materials</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Eagle Sino Complex,  <br>
+              Ahmadu Bello Way, Bauchi, <br>
+              Bauchi state. <br><br>
+              <strong>Phone:</strong> +234 811 770 3973<br>
+              <strong>Email:</strong> ifeanselectrical@gmail.com<br>
             </p>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Eterna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <h3>About Ifeans</h3>
+            <p>Dealers & Suppliers of Building, Electrical & Electronics Materials & Installations</p>
           </div>
 
         </div>
@@ -288,9 +286,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong><span>Ifeans</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
